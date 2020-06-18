@@ -48,6 +48,7 @@ if __name__ == '__main__':
 比如上面的代码所在的文件名称为database.py。
 1.python database.py db init 　生成管理迁移文件的migrations目录
 2.python database.py db migrate -m "注释"　　 在migrations/versions中生成一个文件，该文件记录数据表的创建和更新的不同版本的代码。
+     python myflask.py db revision     # 手动创建 Alemic 迁移
 3.python database.py db upgrade　　在数据库中生成对应的表格。
 4.当需要改表格的时候，改完先执行第二步，然后再执行第三步。
 5.需要修改数据表的版本号的时候需要做的操作如下：
